@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+   
+
+<bean id="p1" class="com.slk.training.beans.PetrolEngine">
+</bean>
+<bean id="d1" class="com.slk.training.beans.DieselEngine">
+</bean>
+<bean id="c1" class="com.slk.training.beans.Car">
+<constructor-arg name="model" value="arena"></constructor-arg>
+<constructor-arg name="cost" value="30000.00"></constructor-arg>
+<constructor-arg name="engine" ref="p1"></constructor-arg>
+<!--<property name="model" value="arena"></property>-->
+<!--<property name="cost" value="400000"></property>-->
+<!--<property name="PetrolEngine" ref="p1"></property>-->
+
+
+</bean>
+
+</beans>
